@@ -1,0 +1,445 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf0;
+    color: #333333;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    color: #a51c30;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #a51c30;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* HEADER AND NAVIGATION */
+
+.site-header {
+    background-color: #9e1b32;
+    padding: 18px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #ffd166;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+
+/* WELCOME SECTION */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background:
+        linear-gradient(120deg, rgba(91, 18, 32, 0.92), rgba(158, 27, 50, 0.82)),
+        linear-gradient(45deg, #d94f45, #f2b84b);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.eyebrow {
+    color: #d99b18;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero .eyebrow {
+    color: #ffd166;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 680px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #ffd166;
+    color: #6f1727;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* GENERAL CONTENT SECTIONS */
+
+.content-section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading p {
+    color: #555555;
+}
+
+.food-section {
+    background-color: #fffaf0;
+}
+
+.saigon-section {
+    background-color: #fce9d8;
+}
+
+.culture-section {
+    background-color: #fff4dc;
+}
+
+.places-section {
+    background-color: #f3f5e9;
+}
+
+
+/* VIETNAMESE FOOD CARDS */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.food-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
+}
+
+.food-visual {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.pho-visual {
+    background-color: #f8d7a4;
+}
+
+.banhmi-visual {
+    background-color: #f4c7a1;
+}
+
+.rolls-visual {
+    background-color: #dce9c8;
+}
+
+.coffee-visual {
+    background-color: #d9c0a2;
+}
+
+
+/* HO CHI MINH CITY */
+
+.feature-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-visual {
+    min-height: 330px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.saigon-visual {
+    background: linear-gradient(135deg, #e9a23b, #c94c4c, #8f2435);
+    color: white;
+}
+
+.saigon-visual span {
+    font-size: 6rem;
+    margin-bottom: 15px;
+}
+
+.saigon-visual p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.feature-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+
+
+/* CULTURE CARDS */
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.culture-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    text-align: center;
+    border-bottom: 5px solid #d6a52b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.culture-icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+
+/* PLACES TO VISIT */
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.place-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
+}
+
+.place-card h3,
+.place-card p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.place-visual {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    margin-bottom: 18px;
+}
+
+.hanoi-visual {
+    background-color: #f2d3a2;
+}
+
+.halong-visual {
+    background-color: #b9d9d4;
+}
+
+.hoian-visual {
+    background-color: #f4c58a;
+}
+
+
+/* PERSONAL CLOSING SECTION */
+
+.closing-section {
+    padding: 85px 10%;
+    background: linear-gradient(135deg, #8f2435, #bd3d42, #d98a35);
+    color: white;
+    text-align: center;
+}
+
+.closing-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.closing-section .eyebrow {
+    color: #ffd166;
+}
+
+.closing-section h2 {
+    color: #ffd166;
+}
+
+.closing-section p {
+    font-size: 1.05rem;
+}
+
+.closing-message {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #571523;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        min-height: 450px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .content-section {
+        padding: 55px 6%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .food-grid,
+    .culture-grid,
+    .places-grid,
+    .feature-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    .closing-section {
+        padding: 65px 7%;
+    }
+}
